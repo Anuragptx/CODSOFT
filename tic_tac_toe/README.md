@@ -32,22 +32,6 @@ Unbeatable AI using Minimax
 Input validation
 Win, lose, and draw detection
 Simple terminal-based interface
-
-#  Sample Output
-
-Human: X | AI: O
-
-Enter your move (1-9): 5
-
-AI is thinking...
-AI chose position 1
-
- O |   |
----+---+---
-   | X |
----+---+---
-   |   |
-
    
 #  Conclusion
 
