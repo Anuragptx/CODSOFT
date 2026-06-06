@@ -1,55 +1,81 @@
-# 🤖 ChatBot - Simple Rule-Based Python Chatbot
+# Simple Chatbot Project
 
-An interactive, rule-based command-line chatbot built in Python. ChatBot parses user queries using regular expressions and keyword pattern matching to identify intents and respond dynamically.
+## Introduction
 
----
+This project is a simple chatbot made using Python. The chatbot works on predefined rules and responds to user inputs based on different conditions. It runs in the terminal and helps in understanding the basic concepts of chatbot development and conversation flow.
 
-## ✨ Features
+## Features
 
-- **Intent Recognition & Pattern Matching**: Employs Python's standard `re` module to identify user queries (greetings, bot identity, jokes, fun facts, current time/date, mathematical calculations).
-- **Basic Math Calculator**: Performs basic arithmetic operations (`+`, `-`, `*`, `/`) dynamically extracted from conversational input.
-- **Contextual State**: Remembers your name and uses it in responses throughout the conversation.
-- **Organic Visual Flow**: Simulates a human-like typing speed for responses, printing them character-by-character.
-- **Console Aesthetics**: Leverages ANSI escape codes for a modern, colorful CLI experience.
-- **Windows UTF-8 Compatible**: Automatically reconfigures system standard output and input streams to support UTF-8 characters and emojis across Windows terminals.
+* Responds to greetings like hello, hi, and hey.
+* Answers simple questions.
+* Remembers the user's name.
+* Tells jokes and fun facts.
+* Shows current date and time.
+* Performs basic mathematical calculations.
+* Displays help commands.
+* Exits when the user types exit, bye, or quit.
 
----
+## Requirements
 
-## 🛠️ Commands & Capabilities
+* Python 3
 
-ChatBot is preconfigured to understand a variety of statements and questions. You can try:
+## How to Run
 
-| Category | Example Phrases |
-| :--- | :--- |
-| **Greetings** | `hi`, `hello`, `hey there`, `greetings` |
-| **Identity** | `who are you?`, `what is your name?` |
-| **Name Update** | `my name is Alice`, `call me Bob`, `i am Charlie` |
-| **Jokes** | `tell me a joke`, `make me laugh`, `tell a joke` |
-| **Fun Facts** | `tell me a fact`, `random fact`, `give me some trivia` |
-| **Time & Date** | `what time is it?`, `what's today's date?`, `current time` |
-| **Calculator** | `calculate 12 + 8`, `what is 5 * 25?`, `42 / 6` |
-| **Status Check** | `how are you?`, `how is it going?` |
-| **Help** | `help`, `commands`, `what can you do` |
-| **Exit** | `exit`, `quit`, `bye`, `goodbye` |
+1. Save the code in a file named `chatbot.py`.
+2. Open Command Prompt or Terminal.
+3. Go to the folder where the file is saved.
+4. Run the following command:
 
----
+```bash
+python chatbot.py
+```
 
-## 🚀 Running the Chatbot
+## Working
 
-Ensure you have **Python 3.7+** installed.
+1. The chatbot starts with a welcome message.
+2. It takes input from the user.
+3. The input is checked using if-else conditions and pattern matching.
+4. According to the input, the chatbot gives a suitable response.
+5. The process continues until the user enters an exit command.
 
-1. Open a terminal (CMD, PowerShell, or Bash) in the `chatbot` folder directory.
-2. Run the chatbot script:
-   ```bash
-   python chatbot.py
-   ```
+## Example
 
----
+Input:
 
-## 🔍 How it Works Under the Hood
+```text
+hello
+```
 
-The chatbot is structured around a simple `ChatBot` class:
-1. **`start()`**: Prints the welcome banner and requests the user's name.
-2. **`match_intent(user_input)`**: Cleanses the input string and scans it sequentially using regular expressions (`re.search`) to match against pre-determined intents.
-3. **`respond(intent, entity)`**: Triggers the appropriate output branch. If the math intent is matched, it parses and calculates the numerical operands.
-4. **`print_slow(text, color)`**: Helper function that streams output with a brief delay (`sys.stdout.flush`) and colorizes terminal output.
+Output:
+
+```text
+Hello! How can I help you today?
+```
+
+Input:
+
+```text
+5 + 3
+```
+
+Output:
+
+```text
+8
+```
+
+Input:
+
+```text
+bye
+```
+
+Output:
+
+```text
+Goodbye!
+```
+
+## Conclusion
+
+This project is a simple rule-based chatbot developed in Python. It uses predefined rules to identify user queries and provide appropriate responses. The project helps in learning the basics of chatbot design and natural language processing.
