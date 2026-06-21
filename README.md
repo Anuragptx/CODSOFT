@@ -1,4 +1,4 @@
-#  CODSOFT AI Internship – June 2026
+#  CODSOFT AI Internship – June 2026 BATCH C4
 
 This repository contains the completed tasks for the CodSoft AI Internship:
 
